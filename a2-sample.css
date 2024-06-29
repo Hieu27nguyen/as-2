@@ -1,0 +1,23 @@
+body {
+}
+
+.container {
+    max-width: 600px;
+}
+
+#game-board {
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    align-items: center;
+    font-size: 24px;
+}
+
+.card.flipped {
+    background-color: #fff;
+}
