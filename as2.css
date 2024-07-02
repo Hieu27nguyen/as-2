@@ -15,25 +15,28 @@ h1.card-header {
 }
 
 .card {
-    background-color: #f1f1f1;
-
-    border-radius: 8px;
-    margin: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    width: 100px;  
-    height: 100px;  
-    justify-content: space-around;
-    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
+    
     display: flex;
-    flex-direction: row;
-    transition: transform 0.3s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
 }
 
 .card img {
-    max-width: 90%; 
-    max-height: 90%; 
+    width: 90%;
+    height: 90%;
+    display: none; /* Images start hidden */
 }
 
-.card.flipCard{
-    background-color: #f1f1f1;
+.card.flipped img {
+    display: block; /* Show image when flipped */
 }
+
+
