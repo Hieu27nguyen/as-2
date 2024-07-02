@@ -6,16 +6,12 @@ body {
 }
 
 #game-board {
-    flex-wrap: wrap;
-    margin-top: 20px;
+
 }
 
 .card {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    align-items: center;
-    font-size: 24px;
+    background-color: #8f3333;
+    
 }
 
 .card.flipped {
