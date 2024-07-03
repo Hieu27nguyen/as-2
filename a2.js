@@ -54,7 +54,8 @@ $(document).ready(function() {
             const firstCard = $(flippedCards[0]);
             const secondCard = $(flippedCards[1]);
             if (firstCard.find('img').attr('src') === secondCard.find('img').attr('src')) {
-                matchCount++;
+                matchCount +=1;
+                $('#score').text(`Score: ${matchCount}`);
                 if (matchCount === totalPairs) {
                     stopTimer();
                     alert('Congratulations! All pairs matched.');
@@ -89,6 +90,7 @@ $(document).ready(function() {
         matchCount = 0;
         seconds = 0;
         $('#moveCount').text('Moves: 0');
+        $('#score').text('Score: 0');
         $('#timer').text('Time: 00:00');
         if (timer) {
             stopTimer();
